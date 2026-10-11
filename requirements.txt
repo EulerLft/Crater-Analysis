@@ -1,0 +1,13 @@
+# Core Numerical and Scientific Computing
+numpy>=1.22.0
+scipy>=1.8.0
+
+# Geospatial and Raster Data Handling
+rasterio>=1.2.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Web Scraping and Data Ingestion
+requests>=2.28.0
+beautifulsoup4>=4.10.0

@@ -1,0 +1,15 @@
+name: crater_analysis
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - rasterio
+  - geopandas
+  - pip
+  - pip:
+      - craterpy

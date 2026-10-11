@@ -11,11 +11,21 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup 
 
+# ====================================
+# DATA DIRECTORY PATH 
+# ====================================
+
 lola_root = Path(__file__).resolve().parent.parent
 data_path = lola_root / 'data' / 'gdr_cylindrical'
 data_path.mkdir(parents=True, exist_ok=True)
 
+# -----------------------------------
+# Change url as necessary 
+# -----------------------------------
+
 url = "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/data/lola_gdr/cylindrical/img/"
+
+
 
 response = requests.get(url)
 response.raise_for_status()

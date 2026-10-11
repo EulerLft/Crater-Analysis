@@ -1,0 +1,7 @@
+LRO LOLA .lbl and .img data files will focus on parsing metadata, extracting spatial and elevation data, and setting up your analysis pipeline.
+
+First, you will use your .lbl (label) files to programmatically parse planetary data headers, coordinate systems, dimensions, and scaling factors. Since these detached labels describe the binary raster structure of the corresponding .img files, reading them first ensures that your scripts interpret the elevation grids with the correct map projections and spatial resolutions.
+
+Second, you will build out automated parsing logic using rasterio and your existing environment tools to ingest the .img raster grids. This will allow you to handle raw binary topography data, convert pixel values into actual physical elevation metrics, and inspect specific lunar coordinate ranges.
+
+Finally, you will integrate these data-loading steps into your automated scraper and validation scripts to prepare for planetary surface characterization. This will enable you to batch-process regional topography, compute elevation profiles, and target specific crater features for structural analysis.

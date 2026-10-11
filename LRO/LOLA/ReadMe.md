@@ -68,6 +68,15 @@ The Gridded Data Records (GDR) cylindrical dataset contains processed raster pro
 
 Each spatial tile splits global or regional lunar topography into manageable dimensions, mapping elevation, radius, or derived morphologic properties into structured arrays readable by geospatial tools like `Rasterio`. 
 
+<b> LDEM (Lunar Digital Elevation Model) <b> : 
+The primary topographic shape model where individual pixel values directly represent surface elevation height in meters relative to a reference datum radius (typically 1,737.4 km). This is the core dataset required for spatial gradient calculation, surface curvature analysis, and numerical diffusion modeling.
+
+<b> LDEC (Lunar Data Elevation Count / Observation Count Map)<b>:
+A data density grid tracking the exact count of individual laser pulse observations falling within each pixel. Because regional gaps between orbital tracks are mathematically filled via interpolation, LDEC files serve as vital mask layers to differentiate authentic, high-confidence measurements from interpolated terrain.
+
+<b> LDAC (Lunar Data Albedo / Count Map)<b>: 
+A companion tracking product recording observation counts or albedo-related data densities corresponding to specific Laser GDR builds, providing background verification on measurement distribution across map tiles. 
+
 ## Automation Scripts
 - `test1.py`: Connects via pathlib to the local data directory, opens local `.lbl` files using `Rasterio`, and verifies raster dimensions, coordinate reference systems, and spatial bounding boxes. 
 
