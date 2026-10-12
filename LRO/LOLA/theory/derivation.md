@@ -1,28 +1,28 @@
-# Physics : Mass wasting/Diffusion Derivation 
+# Physics: Mass wasting/Diffusion Derivation
 
-<b> crater forms<br>: steep, prisintine rims (figure 1.1) <br> 
+<b>crater forms:</b> steep, pristine rims (figure 1.1)
 
+<b>billion of years later:</b> broken rocks from seismic activity or microscopic cratering loosen and slide downward (see figure 1.2)
 
-<b> billion of years later <b>: broken rocks from seismic activity or microscoping cratering loosen and slide downward (see figure 1.2) <br> 
+## Flux Equation
 
-## Flux Equation 
+$$\mathbf{q} = -\kappa\nabla h$$
 
-$q = -\kappa\nabla h$  <br> 
+- rate of sediment transport (mass flux - $\mathbf{q}$) per unit contour length is proportional to the local surface slope ($\nabla h$).
+- material moves from highest elevation (rim) to lowest elevation (floor) down the steepest gradient
 
-- rate of sediment transport (mass flux - $q$) per unit contour length is proportional to the local surface slope ($\nabla h$). <br> 
-- material moves from highest elevation (rim) to lowest elevation (floor) down the steepest gradient  <br>  
+## Mass Conservation
 
-## Mass Conservation 
+It is well established that:
 
-It is well established that: <br>
+$$\frac{\partial \rho}{\partial t} + \nabla \cdot \vec{j} = \sigma$$
 
-\frac{\partial \rho}{\partial t} + \nabla \overrightarrow{j} = \sigma <br> 
+$$\implies \frac{\partial h}{\partial t} + \nabla \mathbf{q} = 0$$
 
-$\implies$ $\frac{\partial h}{\partial t} + \nabla q = 0$ <br> 
-(i.e. mass is conserved in the system) <br> 
+(i.e. mass is conserved in the system)
 
-substituting our flux into the mass conservation equation we obtain: <br> 
+substituting our flux into the mass conservation equation we obtain:
 
-$\frac{\partial h}{\partial t} = -\nabla\cdot(-\kappa \nabla h)$ <br> 
-$implies $ $\frac{\partial h}{\partial t} = \kappa \nabla ^2 h$ <br>  
+$$\frac{\partial h}{\partial t} = -\nabla\cdot(-\kappa \nabla h)$$
 
+$$\implies \frac{\partial h}{\partial t} = \kappa \nabla^2 h$$
