@@ -1,4 +1,4 @@
-# Physics: Mass wasting/Diffusion Derivation
+# Physics: Mass Wasting/Diffusion Derivation
 
 <b>crater forms:</b> steep, pristine rims (figure 1.1)
 
